@@ -1,0 +1,31 @@
+nav.menu{
+    li{
+        a.link{
+            font-size: 18px; color:$color-darkgray; display: block;
+            &:hover {color: $color-secondary;}
+        }
+        &.active{
+            a.link{color: $color-secondary;}
+        }
+        &.dropdown{
+            a.link {
+                .icon{ display: inline-block; vertical-align: middle;
+                    &:before{content: "\f107"; font-family: 'FontAwesome';}
+                }
+            }
+            &.show{
+                a.link{
+                    .icon{
+                        &:before{content: '\f106';}
+                    }
+                }
+            }
+        }
+    }
+    li+li{ margin-left: 20px;}
+    .dropdown-toggle::after{display: none;}
+    .dropdown-menu{
+        li{width: 100%;}
+        li+li{margin-left: 0; border-top: 1px solid #ebebeb;}
+    }
+}

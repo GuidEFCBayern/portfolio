@@ -1,0 +1,9 @@
+.editor-content{
+    .font-base{font-size: 24px; color: #666; margin-bottom: 20px;}
+    @extend .font-base;
+    p{
+        @extend .font-base;
+        &:last-child{margin-bottom: 0;}
+    }
+    img{height: auto !important;}
+}

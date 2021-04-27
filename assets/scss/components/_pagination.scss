@@ -1,0 +1,17 @@
+.pagination-block{text-align: center;}
+.pagination{
+    margin: 0;display: inline-block;
+    .link{display: block;  text-align: center; 
+        min-width: 40px; height: 40px; line-height: 40px;  padding: 0 10px; font-size: 14px; font-weight: 500; 
+        color: $color-light; 
+        background-color: $color-darkgray; 
+        @include border-radius(0px);
+        @include transition(all 200ms ease-out);
+        &:hover{background-color: $color-darkgray;  color: $color-light; }
+    }
+    .active{
+        .link{background-color: $color-darkgray;  color: $color-light; }
+    }
+    li{display: inline-block; vertical-align: middle;}
+    li + li{margin-left: 6px;}
+}

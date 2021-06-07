@@ -1,0 +1,159 @@
+.ms-container {position: fixed;z-index: 1;display: none;}
+.ms-default {position: absolute;z-index: 2;display: block;}
+.section{width: 100vw; height: 100vh; position: relative; z-index: 3; overflow: hidden;
+	.link-btn{font-size: 16px; color: $color-gray; position: absolute; z-index: 99; line-height: 1; cursor: pointer;
+		@include transition(all 200ms ease-out);
+		&:focus,
+		&:hover{text-decoration: none;}
+		&:before{content: "";width: 30px; height: 30px; border-left: 2px solid $color-gray; border-bottom: 2px solid $color-gray; 
+			position: absolute; pointer-events: none;
+		}
+		.circle{width: 120px; height: 120px; border-radius: 50%; border: 2px solid $color-gray; opacity: 0.0; 
+			position: absolute; transition: all 200ms ease-out; pointer-events: none;
+			&.v1{@include transform(scale(0)); @include transition-delay(50ms);}
+			&.v2{@include transform(scale(0)); @include transition-delay(50ms);}
+			&.v3{@include transform(scale(0)); @include transition-delay(50ms);}
+			&.v4{@include transform(scale(0)); @include transition-delay(50ms);}
+		}
+	}
+	.link-btn:hover{
+		.circle{ opacity: 0.1;
+			&.v1{
+				animation-name: link-btn-circle-vI;
+				animation-duration: 4s;
+				animation-delay: 100ms;
+				animation-iteration-count: infinite;
+			}
+			&.v2{
+				animation-name: link-btn-circle-vII;
+				animation-duration: 4s;
+				animation-delay: 100ms;
+				animation-iteration-count: infinite;
+			}
+			&.v3{
+				animation-name: link-btn-circle-vIII;
+				animation-duration: 4s;
+				animation-delay: 100ms;
+				animation-iteration-count: infinite;
+			}
+			&.v4{
+				animation-name: link-btn-circle-vIV;
+				animation-duration: 4s;
+				animation-delay: 100ms;
+				animation-iteration-count: infinite;
+			}
+		}
+	}
+	.btn-left{left: 50px; top: 50%; padding-left: 30px;  @include transform(translate(0,-50%));
+		animation-name: btn-left-in;
+		animation-duration: 1s;
+		animation-delay: 100ms;
+		animation-iteration-count: 1;
+		&.link-btn:before {left: 0;top: -8px; @include transform(rotate(45deg));}
+		&:hover{
+			&.link-btn:before {
+				animation-name: btn-left;
+				animation-duration: 1s;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+			}
+		}
+		.circle{top: -52px; left: 18px;}
+	}
+	.btn-right{right: 50px; top: 50% ; padding-right: 30px; @include transform(translate(0,-50%));
+		animation-name: btn-right-in;
+		animation-duration: 1s;
+		animation-delay: 100ms;
+		animation-iteration-count: 1;
+		&.link-btn:before { right: 0;top: -8px; @include transform(rotate(-135deg));}
+		&:hover{
+			&.link-btn:before {
+				animation-name: btn-right;
+				animation-duration: 1s;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+			}
+		}
+		.circle{top: -52px; right: 18px;}
+	}
+	.btn-bottom{left:50%; bottom: 50px; text-align: center; padding-bottom: 25px; @include transform(translate(-50%,0));
+		animation-name: btn-bottom-in;
+		animation-duration: 1s;
+		animation-delay: 100ms;
+		animation-iteration-count: 1;
+		&.link-btn:before { left: 0; right: 0; margin: auto; bottom: -5px; @include transform(rotate(-45deg));}
+		&:hover.link-btn:before {
+			animation-name: btn-bottom;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		.circle{top: -52px; left: -39px;}
+	}
+	.btn-top{left:50%; top: 50px; text-align: center; padding-top: 35px; @include transform(translate(-50%,0));
+		animation-name: btn-top-in;
+		animation-duration: 1s;
+		animation-delay: 100ms;
+		animation-iteration-count: 1;
+		&.link-btn:before { left: 0; right: 0; margin: auto; top: -5px; @include transform(rotate(135deg));}
+		&:hover.link-btn:before {
+			animation-name: btn-top;
+			animation-duration: 1s;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		.circle{top: -18px;left: -39px;}
+	}
+}
+@keyframes link-btn-circle-vI {
+	from{@include transform(scale(0.0));}
+	to  {@include transform(scale(0.8)); opacity: 0;}
+}
+@keyframes link-btn-circle-vII {
+	from{@include transform(scale(0.0));}
+	to  {@include transform(scale(1.0)); opacity: 0;}
+}
+@keyframes link-btn-circle-vIII {
+	from{@include transform(scale(0.0));}
+	to  {@include transform(scale(1.2)); opacity: 0;}
+}
+@keyframes link-btn-circle-vIV {
+	from{@include transform(scale(0.0));}
+	to  {@include transform(scale(1.4)); opacity: 0;}
+}
+@keyframes btn-left {
+	0%  {left: 0;}
+	50% {left: -5px;}
+	100%{left: 0;}
+}
+@keyframes btn-right {
+	0%  {right: 0;}
+	50% {right: -5px;}
+	100%{right: 0;}
+}
+@keyframes btn-bottom {
+	0%  {bottom: -5px;}
+	50% {bottom: 0px;}
+	100%{bottom: -5px;}
+}
+@keyframes btn-top {
+	0%  {top: -5px;}
+	50% {top: 0px;}
+	100%{top: -5px;}
+}
+@keyframes btn-left-in {
+	from{left: -100%; opacity: 0;}
+	to{left: 50px; opacity: 1;}
+}
+@keyframes btn-right-in {
+	from{right: -100%; opacity: 0;}
+	to{right: 50px; opacity: 1;}
+}
+@keyframes btn-bottom-in {
+	from{bottom: -100%; opacity: 0;}
+	to{bottom: 50px; opacity: 1;}
+}
+@keyframes btn-top-in {
+	from{top: -100%; opacity: 0;}
+	to{top: 50px; opacity: 1;}
+}

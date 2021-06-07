@@ -1,3 +1,41 @@
 .site-header{
-
+    .logo-name{position:fixed; z-index: 9; top: 50px; left: 50px;
+        animation: logo-name 3000ms;
+        @keyframes logo-name {
+            from {opacity:0; top: -10%;}
+            to {opacity: 1; top: 50px;}
+        }
+        .row{pointer-events: none;}
+        .link{display:block;}
+        .lazy{width: 84px; display:block; @include transition(all 400ms ease-out);}
+        .txt{padding-left: 15px; font-size: 30px; font-weight: 400; line-height:0.9em; color:$color-dark;}
+        .link:hover{
+            .lazy{@include box-shadow(0px 0px 30px 0 rgba(0,0,0,0.3));}
+        }
+    }
+    .main-menu{position:fixed; z-index: 11; top: 50px; right: 50px;
+        animation: main-menu 3000ms;
+        @keyframes main-menu {
+            from {opacity:0; top: -10%;}
+            to {opacity: 1; top: 50px;}
+        }
+        .nav-home{
+            .link{background-color: #555555; width: 84px; height: 84px; line-height: 78px; text-align: center;
+                &:hover{background-color: $color-darkgray;}
+                .lazy{width: 54px; height: 40px; filter: invert(100%); pointer-events: none;}
+            }
+        }
+        .nav-menu{position: relative; right: 0; @include transition(all 400ms ease);
+            &.open{right: 210px;}
+        }
+    }
 }
+
+.global-container .site-header .overlay{visibility: hidden;opacity: 0;@include transition(all 400ms ease);}
+.global-container .site-container{position: relative;right: 0; @include transition(all 400ms ease);}
+.global-container .site-footer{position: relative;right: 0; @include transition(all 400ms ease);}
+.global-container.sidebar-open .site-header .overlay{opacity: 1;visibility: visible;}
+.global-container.sidebar-open .site-container{right: 260px;}
+.global-container.sidebar-open .site-footer{right: 260px;}
+
+.site-header .overlay{position: fixed; z-index: 10; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255,255,255,0.8); backdrop-filter: blur(5px);}

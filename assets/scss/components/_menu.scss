@@ -1,11 +1,13 @@
-nav.menu{
-    li{
+nav.menu{position: fixed; z-index: 100; top: 0; bottom: 0; width: 260px;  background-color: $color-light;
+    overflow: auto; right: -260px; padding-left: 0;@include transition(all 400ms ease);
+    &.open {right: 0; @include box-shadow(-5px 0px 30px 0 rgba(0,0,0,0.1));}
+    li{width: 100%; border-bottom: 1px solid $color-border;
         a.link{
-            font-size: 18px; color:$color-darkgray; display: block;
-            &:hover {color: $color-secondary;}
+            font-size: 20px; color:$color-darkgray; display: block; padding: 15px 20px;
+            &:hover {background-color: $color-border;}
         }
         &.active{
-            a.link{color: $color-secondary;}
+            a.link{color: $color-light; background-color: $color-darkgray;}
         }
         &.dropdown{
             a.link {
@@ -21,11 +23,5 @@ nav.menu{
                 }
             }
         }
-    }
-    li+li{ margin-left: 20px;}
-    .dropdown-toggle::after{display: none;}
-    .dropdown-menu{
-        li{width: 100%;}
-        li+li{margin-left: 0; border-top: 1px solid #ebebeb;}
     }
 }

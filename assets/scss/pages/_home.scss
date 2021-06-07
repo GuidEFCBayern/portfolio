@@ -1,9 +1,56 @@
-.brand{
-	.logo{position: fixed; z-index: 9; left: 0; top: 0; right: 0; bottom: 0; margin: auto;
-		width: 350px; height: 272px;
-	}
-	.logo-txt{position: fixed; z-index: 9; left: 0; top: 260px; right: 0; bottom: 0; margin: auto; 
-		font-size: 20px; color: $color-gray;
-		width: 90px; height: 16px; text-align: center;
-	}
+.-section-home{
+    .brand{
+        .logo{position: absolute; z-index: 9; left: 0; top: 0; right: 0; bottom: 0; margin: auto;
+            width: 320px; height: 192px;
+            animation: logo 2000ms;
+            @keyframes logo {
+                from {opacity:0; top: -10%;}
+                to {opacity: 1; top: 0;}
+            }
+        }
+        .logo-txt{position: absolute; z-index: 9; left: 0; top: 240px; right: 0; bottom: 0; margin: auto; 
+            font-size: 16px; color: $color-gray;
+            width: 120px; height: 16px; text-align: center;
+            animation: logo-txt 4000ms;
+            @keyframes logo-txt {
+                from {opacity:0; bottom: -10%;}
+                to {opacity: 1; bottom: 0;}
+            }
+        }
+    }
+    @keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+    }
+    @-webkit-keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+    }
+    @-moz-keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+    }
+
+    @keyframes move-clouds-back {
+        from {background-position:0 0;}
+        to {background-position:10000px 0;}
+    }
+    @-webkit-keyframes move-clouds-back {
+        from {background-position:0 0;}
+        to {background-position:10000px 0;}
+    }
+    @-moz-keyframes move-clouds-back {
+        from {background-position:0 0;}
+        to {background-position:10000px 0;}
+    }
+
+    .stars, .twinkling, .clouds { position:absolute;top:0;left:0;right:0;bottom:0;width:100vw;height:100vh;}
+    .stars {background:$color-light url(../img/background/stars.png) repeat top center; z-index:0;}
+    .twinkling{ background:transparent url(../img/background/twinkling.png) repeat top center; z-index:1;
+        @include animation(move-twink-back 200s linear infinite);
+        
+    }
+    .clouds{ background:transparent url(../img/background/clouds3.png) repeat top center; z-index:3;
+        @include animation(move-clouds-back 200s linear infinite);
+    }
 }

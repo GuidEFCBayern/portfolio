@@ -119,7 +119,7 @@
 }
 
 .nav-close-menu{position: absolute;z-index: 9; top: 50px; right: 50px;
-    width: 84px;height: 84px; padding: 30px 25px;
+    width: 84px;height: 84px; display: flex; align-items: center; justify-content: center;
      background-color: $color-gray;
     @include transition(all 400ms ease-out);
     &:hover{background-color: $color-darkgray;}

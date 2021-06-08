@@ -1,5 +1,7 @@
 .menu-mobile-btn{
-    display: block;position: relative;z-index: 3; width: 84px;height: 84px; padding: 30px 25px; background-color: $color-gray;
+    display: block;position: relative;z-index: 3; width: 84px;height: 84px; 
+    display: flex; align-items: center; justify-content: center;
+    background-color: $color-gray;
     @include transition(all 400ms ease-out);
     &:hover{background-color: $color-darkgray;}
     .btn-mobile{display: block; position: relative; width: 33px; height: 24px;

@@ -1,5 +1,73 @@
 @media (max-width: 1600px) {
 	.container{max-width: inherit; width: 1210px;}
+
+	.site-header .logo-name .lazy {width: 74px;}
+	.site-header .logo-name .txt {padding-left: 12px;font-size: 26px;}
+
+	.site-header .main-menu .nav-home .link {width: 74px;height: 74px;line-height: 68px;}
+	.site-header .main-menu .nav-home .link .lazy {width: 40px;height: 30px;}
+
+	.menu-mobile-btn {width: 74px;height: 74px;}
+
+	.whead .title {font-size: 120px;}
+
+	.-section-home .brand .logo {width: 280px;height: 172px;}
+	.-section-home .brand .logo-txt {top: 200px;}
+
+	.-section-about .data-content {width: 1000px;}
+	.-section-about .data-content .cover {width: 346px;height: 433px;margin-right: 46px;}
+	.-section-about .data-content .cover:before {top: 35px;right: 35px;}
+	.-section-about .data-content .item-list {width: 630px;}
+	.-section-about .data-content .link {padding: 20px 25px;}
+	.-section-about .data-content .link .lazy {width: 35px;height: 30px;margin-right: 6px;}
+	.-section-about .data-content .link .txt {font-size: 18px;}
+
+	#AboutMe .data-content{width: 950px;}
+	#AboutMe .item-list li {padding: 30px 0;}
+	#AboutMe .txt {font-size: 18px;}
+
+	#Education .item-list{width: 1400px;}
+	#Education .icon {width: 43px;height: 43px;}
+	#Education .icon img {max-width: 27px;max-height: 22px;}
+	#Education .year {font-size: 30px;}
+	#Education .txt {font-size: 18px;}
+
+	#Skill .content{width: 1000px;}
+	#Skill .txt, #Skill .percent {font-size: 18px;}
+
+	#Work .item-list {width: 80px;}
+	
+	#Work .item-list > li + li:before {height: 20px;}
+	#Work .icon{width: 80px;}
+	#Work .txt {font-size: 20px;margin-top: 10px;}
+	#Work .desc {font-size: 18px;margin-top: 8px;}
+	#Work.open .item-list > li + li {margin-top: 20px;}
+	#Work.open .icon {width: 80px;height: 80px;}
+	#Work.open .-L .info {padding-right: 20px;}
+	#Work.open .-R .info {padding-left: 20px;}
+
+	.-section-contact .data-content{width: 1000px;}
+	.-section-contact .item-list li{min-height: 150px;}
+	.-section-contact .item-list li:nth-child(1) {padding-bottom: 25px;padding-left: 105px;padding-top: 75px;}
+	.-section-contact .item-list li:nth-child(2) {padding-bottom: 25px;padding-left: 125px;padding-top: 75px;}
+	.-section-contact .item-list li:nth-child(3) {padding-bottom: 25px;padding-left: 115px;padding-top: 75px;}
+	.-section-contact .item-list li:nth-child(4) {padding-top: 30px;padding-left: 105px;}
+	.-section-contact .item-list li:nth-child(5) {padding-top: 30px;padding-left: 125px;}
+	.-section-contact .item-list li:nth-child(6) {padding-top: 30px;padding-left: 115px;}
+	.-section-contact .wrapper .icon {top: -4px;margin-right: 6px;font-size: 25px;}
+	.-section-contact .wrapper .content .txt,
+	.-section-contact .wrapper .content .link{font-size: 18px;}
+
+	.-section-portfolio .nav-tabs .nav-link {width: 210px;height: 54px;line-height: 52px; font-size: 14px;}
+	.-section-portfolio .nav-tabs .nav-link img{width: 20px;}
+	.-section-portfolio .portfolio-slider {width: 1200px;height: 300px;}
+	.-section-portfolio .portfolio-slider .tag {width: 100px;height: 30px;line-height: 30px;font-size: 12px;}
+	.-section-portfolio .portfolio-slider .slick-slide .link {width: 320px;height: 220px;}
+	.-section-portfolio .portfolio-slider .slick-center {margin-left: -100px;margin-right: -100px;margin-top: -60px;}
+	.-section-portfolio .portfolio-slider .slick-center .link {width: 540px;height: 285px;}	
+	.-section-portfolio .portfolio-slider .slick-center .thumb:before {top: -15px;left: -15px;right: -15px;bottom: 15px;}
+	
+
 }
 
 @media (max-width: 1440px) /*check 1280*/ {

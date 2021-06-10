@@ -43,18 +43,21 @@ $(document).ready(function () {
 
     $('[data-toggle="menu-mobile"]').click(function(){
         $(this).toggleClass('close');
+        $('body').toggleClass('sidebar-open');
         $('.global-container').toggleClass('sidebar-open');
         $('.nav-menu').toggleClass('open');
         $('nav.menu').toggleClass('open');
     });
     $('[data-toggle="menu-overlay"]').click(function(){
         $('[data-toggle="menu-mobile"]').removeClass('close');
+        $('body').removeClass('sidebar-open');
         $('.global-container').removeClass('sidebar-open');
         $('.nav-menu').removeClass('open');
         $('nav.menu').removeClass('open');
     });
     $('nav.menu li a.link').click(function(){
         $('[data-toggle="menu-mobile"]').removeClass('close');
+        $('body').removeClass('sidebar-open');
         $('.global-container').removeClass('sidebar-open');
         $('.nav-menu').removeClass('open');
         $('nav.menu').removeClass('open');

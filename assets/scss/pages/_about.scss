@@ -199,11 +199,7 @@
         }
     }
     .whead{bottom: -10%; opacity: 0; @include transition(all 800ms ease-out); @include transition-delay(400ms);
-        .title{color: #888888; opacity: 0.03;
-            background: transparent;
-            background-clip: inherit;
-            -webkit-text-fill-color: inherit;
-        }
+        .title{color: #888888; opacity: 0.03;}
     }
     .data-content{height: 100vh; display:table; position:relative; z-index: 5; width:1160px; margin:0 auto; opacity: 0;
         @include transition(all 1500ms ease-out); @include transition-delay(400ms); @include transform(scale(0.5));
@@ -262,11 +258,7 @@
     }
     
     .whead{bottom: -10%; opacity: 0; @include transition(all 800ms ease-out); @include transition-delay(400ms);
-        .title{color: $color-dark; opacity: 0.03;
-            background: transparent;
-            background-clip: inherit;
-            -webkit-text-fill-color: inherit;
-        }
+        .title{color: $color-dark; opacity: 0.03;}
     }
     .data-content{height: 100vh; display:table; position:relative; z-index: 5; width:100vw; margin:0 auto;
         >div{display:table-cell; vertical-align: middle;}
@@ -330,11 +322,7 @@
     }
 
     .whead{z-index: 6; bottom: -10%; opacity: 0; @include transition(all 800ms ease-out); @include transition-delay(400ms);
-        .title{color: $color-darkgray; opacity: 0.03;
-            background: transparent;
-            background-clip: inherit;
-            -webkit-text-fill-color: inherit;
-        }
+        .title{color: $color-darkgray; opacity: 0.03;}
     }
     
     #particles {position: relative; z-index: 4; width: 100vw; height: 100vh; 
@@ -408,11 +396,7 @@
 
     .whead{z-index: 6; bottom: -10%; opacity: 0; 
         @include transition(all 800ms ease-out); @include transition-delay(400ms);
-        .title{color: $color-darkgray; opacity: 0.03;
-            background: transparent;
-            background-clip: inherit;
-            -webkit-text-fill-color: inherit;
-        }
+        .title{color: $color-darkgray; opacity: 0.03;}
     }
     
     .data-content{height: 100vh; display:table; position:absolute; z-index: 5; width:100vw; margin:0 auto;

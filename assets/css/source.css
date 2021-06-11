@@ -23359,7 +23359,6 @@ nav.menu {
   bottom: 0;
   width: 260px;
   background-color: #ffffff;
-  overflow: auto;
   right: -260px;
   padding-left: 0;
   transition: all 400ms ease;
@@ -23367,6 +23366,10 @@ nav.menu {
 nav.menu.open {
   right: 0;
   box-shadow: -5px 0px 30px 0 rgba(0, 0, 0, 0.1);
+}
+nav.menu .nav-list {
+  overflow: auto;
+  max-height: calc(100vh - 104px);
 }
 nav.menu li {
   width: 100%;
@@ -23395,19 +23398,6 @@ nav.menu li.dropdown a.link .icon:before {
 }
 nav.menu li.dropdown.show a.link .icon:before {
   content: "";
-}
-nav.menu .copyright {
-  padding: 10px;
-  text-align: center;
-  font-size: 10px;
-  line-height: 1.6em;
-  color: #ffffff;
-  background-color: #333333;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 .menu-mobile-btn {
@@ -25834,6 +25824,44 @@ nav.menu .copyright {
 .site-header .main-menu .nav-menu.open {
   right: 210px;
 }
+.site-header .main-menu .w3c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 52px;
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+}
+.site-header .main-menu .w3c > div {
+  display: flex;
+  justify-content: center;
+}
+.site-header .main-menu .w3c > div + div {
+  border-left: 1px solid #ebebeb;
+  margin-left: 6px;
+  padding-left: 6px;
+}
+.site-header .main-menu .copyright {
+  height: 52px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.6em;
+  color: #ffffff;
+  background-color: #333333;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
 
 .global-container .site-header .overlay {
   visibility: hidden;
@@ -26955,10 +26983,16 @@ body.sidebar-open {
 
   .section .btn-left {
     left: 20px;
+    top: auto;
+    transform: none;
+    bottom: 35px;
   }
 
   .section .btn-right {
     right: 20px;
+    top: auto;
+    transform: none;
+    bottom: 35px;
   }
 
   .section .btn-bottom {
@@ -26966,7 +27000,8 @@ body.sidebar-open {
   }
 
   .section .btn-top {
-    top: 105px;
+    top: auto;
+    bottom: 35px;
   }
 
   @-webkit-keyframes btn-left-in {
@@ -27032,21 +27067,21 @@ body.sidebar-open {
   }
   @-webkit-keyframes btn-top-in {
     from {
-      top: -100%;
+      bottom: -100%;
       opacity: 0;
     }
     to {
-      top: 105px;
+      bottom: 35px;
       opacity: 1;
     }
   }
   @keyframes btn-top-in {
     from {
-      top: -100%;
+      bottom: -100%;
       opacity: 0;
     }
     to {
-      top: 105px;
+      bottom: 35px;
       opacity: 1;
     }
   }
@@ -27115,6 +27150,11 @@ body.sidebar-open {
 
   #Skill .item-list li {
     width: 100%;
+  }
+
+  #Work .info .inner {
+    width: 260px;
+    white-space: inherit;
   }
 }
 @media (max-width: 767px) {

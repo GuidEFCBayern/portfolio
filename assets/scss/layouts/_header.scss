@@ -28,6 +28,17 @@
         .nav-menu{position: relative; right: 0; @include transition(all 400ms ease);
             &.open{right: 210px;}
         }
+        .w3c{display: flex; align-items: center; justify-content: center; height: 52px;
+            position: absolute; left: 0; right: 0; bottom: 52px; width: 100%; border-top: 1px solid $color-border;
+            >div{ display: flex; justify-content: center;
+                +div{border-left: 1px solid $color-border; margin-left: 6px; padding-left: 6px;}
+            }
+        }
+        .copyright { height: 52px; display: flex; width: 100%; align-items: center; justify-content: center;
+            text-align: center; font-size: 10px; line-height: 1.6em;
+            color: $color-light; background-color: $color-darkgray;
+            position: absolute; left: 0; right: 0; bottom: 0; width: 100%;
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 nav.menu{position: fixed; z-index: 100; top: 0; bottom: 0; width: 260px;  background-color: $color-light;
-    overflow: auto; right: -260px; padding-left: 0;@include transition(all 400ms ease);
+    right: -260px; padding-left: 0;@include transition(all 400ms ease);
     &.open {right: 0; @include box-shadow(-5px 0px 30px 0 rgba(0,0,0,0.1));}
+    .nav-list{overflow: auto; max-height: calc(100vh - 104px);}
     li{width: 100%; border-bottom: 1px solid $color-border;
         a.link{
             font-size: 20px; color:$color-darkgray; display: block; padding: 15px 20px;
@@ -23,9 +24,5 @@ nav.menu{position: fixed; z-index: 100; top: 0; bottom: 0; width: 260px;  backgr
                 }
             }
         }
-    }
-    .copyright { padding: 10px; text-align: center; font-size: 10px; line-height: 1.6em;
-        color: $color-light; background-color: $color-darkgray;
-        position: absolute; left: 0; right: 0; bottom: 0; width: 100%;
     }
 }

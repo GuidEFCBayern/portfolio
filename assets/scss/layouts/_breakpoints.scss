@@ -287,10 +287,10 @@
 
 	.nav-close-menu {top: 20px;right: 20px;}
 
-	.section .btn-left {left: 20px;}
-	.section .btn-right {right: 20px;}
+	.section .btn-left {left: 20px; top: auto; transform: none; bottom: 35px;}
+	.section .btn-right {right: 20px; top: auto; transform: none; bottom: 35px;}
 	.section .btn-bottom {bottom: 20px;}
-	.section .btn-top {top: 105px;}
+	.section .btn-top {top: auto;bottom: 35px;}
 
 	@keyframes btn-left-in {
 		from{left: -100%; opacity: 0;}
@@ -305,8 +305,8 @@
 		to{bottom: 20px; opacity: 1;}
 	}
 	@keyframes btn-top-in {
-		from{top: -100%; opacity: 0;}
-		to{top: 105px; opacity: 1;}
+		from{bottom: -100%; opacity: 0;}
+		to{bottom: 35px; opacity: 1;}
 	}
 
 	.-section-about .data-content {width: 100%; display: flex; align-items: center; justify-content: center;}
@@ -328,6 +328,8 @@
 
 	#Skill .content {width: 70%;}
 	#Skill .item-list li{width: 100%;}
+
+	#Work .info .inner{width: 260px; white-space: inherit;}
 
 
 }

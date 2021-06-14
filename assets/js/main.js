@@ -63,42 +63,6 @@ $(document).ready(function () {
         $('nav.menu').removeClass('open');
     });
 
-    $('.main-slider').slick({
-        prevArrow:"<div class='slick-prev'><span class='feather icon-chevron-left'></span></div>",
-        nextArrow:"<div class='slick-next'><span class='feather icon-chevron-right'></span></div>",
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        focusOnSelect: true,
-        rows: 1,
-        slidesPerRow:1,
-        responsive: [
-            {
-                breakpoint: 575,
-                settings: {
-                    rows: 1,
-                    slidesPerRow:1
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    rows: 1,
-                    slidesPerRow:1
-                }
-            },
-            {
-                breakpoint: 1366,
-                settings: {
-                    rows: 1,
-                    slidesPerRow:1
-                }
-            }
-        ]
-    });
-
     $('.btn-menu-home').click(function() {
         $('nav.menu li').removeClass('active');
         $('nav.menu li.menu-home').addClass('active');
@@ -173,7 +137,17 @@ $(document).ready(function () {
         centerPadding: '0px',
         variableWidth: true,
         rows: 1,
-        slidesPerRow:1
+        slidesPerRow:1,
+        responsive: [
+            {
+                breakpoint: 575,
+                settings: {
+                    variableWidth: false,
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
@@ -181,9 +155,7 @@ $(document).ready(function () {
         e.relatedTarget
         $('.portfolio-slider').slick('setPosition');
     });
-    $('.btn-menu-portfolio').click(function(e){
-        e.target
-        e.relatedTarget
+    $('.btn-menu-portfolio').click(function(){
         $('.portfolio-slider').slick('setPosition');
     });
 

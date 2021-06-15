@@ -15,30 +15,8 @@ $(document).ready(function () {
         fullScreen : false
     });
 
-    $(".mcscroll").mCustomScrollbar({
-       axis : "y",
-       scrollButtons: {
-           enable: true
-       }
-    });
-    $(".mcscrollX").mCustomScrollbar({
-       axis : "x",
-       scrollButtons: {
-           enable: true
-       }
-    });
-
     var lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy"
-    });
-
-    var topbar = $('.site-header').height();
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > topbar) {
-            $(".site-header").addClass("tiny");
-        } else {
-            $(".site-header").removeClass("tiny");
-        }
     });
 
     $('[data-toggle="menu-mobile"]').click(function(){
@@ -111,7 +89,7 @@ $(document).ready(function () {
 
     $('#Work').ripples({
         resolution: 512,
-        dropRadius: 20, //px
+        dropRadius: 20,
         perturbance: 0.04,
     });
 

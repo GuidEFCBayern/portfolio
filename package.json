@@ -1,7 +1,8 @@
 {
-  "name": "guide-template",
+  "name": "guide-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,9 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.0.0",
     "gulp-strip-comments": "^2.5.2",
@@ -26,7 +27,6 @@
     "imagemin-pngquant": "^8.0.0",
     "optipng": "^2.1.0",
     "sticky-sidebar": "^3.3.1",
-    "vue": "^3.0.11"
-  },
-  "description": ""
+    "vue": "^2.6.11"
+  }
 }

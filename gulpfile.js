@@ -5,7 +5,6 @@ var BASE = {
 
 var CSS = {
 	src: [
-		BASE.src + 'assets/css/import.css',
 		BASE.src + 'assets/css/source.css',
 	],
 	dist: BASE.dist + 'assets/css',
@@ -15,24 +14,18 @@ var CSS = {
 var JS = {
 	src: [
 		BASE.src + 'assets/js/jquery-2.1.4.min.js',
-		BASE.src + 'assets/js/popper.min.js',
-		BASE.src + 'assets/js/jquery-ui.min.js',
-		BASE.src + 'assets/js/jquery.ui.touch-punch.min.js',
 		BASE.src + 'assets/js/jquery.easing-1.3.min.js',
 		BASE.src + 'assets/js/modernizr-3.6.0.min.js',
 		BASE.src + 'assets/js/bootstrap.min.js',
-		BASE.src + 'assets/js/validator.min.js',
-		BASE.src + 'assets/js/wow.min.js',
-		BASE.src + 'assets/js/select2.min.js',
 		BASE.src + 'assets/js/jquery.fancybox.min.js',
-		BASE.src + 'assets/js/jquery.mCustomScrollbar.min.js',
 		BASE.src + 'assets/js/slick.js',
 		BASE.src + 'assets/js/lazyload.min.js',
-		BASE.src + 'assets/js/trunk8.min.js.js',
-		BASE.src + 'assets/js/jquery.matchHeight-min.js',
-		BASE.src + 'assets/js/jquery.sticky-sidebar.min.js',
-		BASE.src + 'assets/js/sticky-sidebar.min.js',
 		BASE.src + 'assets/js/resizesensor.js',
+		BASE.src + 'assets/js/multi-screen.js',
+		BASE.src + 'assets/js/ios-parallax.js',
+		BASE.src + 'assets/js/jquery.particleground.min.js',
+		BASE.src + 'assets/js/jquery.ripples.min.js',
+		BASE.src + 'assets/js/jquery.ckLine.min.js',
 		BASE.src + 'assets/js/main.js',
 	],
 	dist: BASE.dist + 'assets/js',

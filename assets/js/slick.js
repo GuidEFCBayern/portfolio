@@ -1,21 +1,5 @@
-/*
-     _ _      _       _
- ___| (_) ___| | __  (_)___
-/ __| | |/ __| |/ /  | / __|
-\__ \ | | (__|   < _ | \__ \
-|___/_|_|\___|_|\_(_)/ |___/
-                   |__/
-
- Version: 1.6.0
-  Author: Ken Wheeler
- Website: https://kenwheeler.github.io
-    Docs: https://kenwheeler.github.io/slick
-    Repo: https://github.com/kenwheeler/slick
-  Issues: https://github.com/kenwheeler/slick/issues
-
- */
 /* global window, document, define, jQuery, setInterval, clearInterval */
-(function(factory) {
+;(function(factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
         define(['jquery'], factory);

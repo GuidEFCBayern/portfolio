@@ -1,14 +1,10 @@
 (function($){
   $.iosParallax = function(el, options){
-    // To avoid scope issues, use 'base' instead of 'this'
-    // to reference this class from internal events and functions.
     var base = this;
 
-    // Access to jQuery and DOM versions of element
     base.$el = $(el);
     base.el = el;
 
-    // Add a reverse reference to the DOM object
     base.$el.data("iosParallax", base);
 
     var centerCoordinates = {x: 0, y: 0};
@@ -49,7 +45,6 @@
         targetCoordinates.y = height * cursorY * -1 + centerCoordinates.y;
       });
 
-      // Slowly converge the background image position to the target coordinates in 60 FPS
       var loop = setInterval(function(){
         transitionCoordinates.x += ((targetCoordinates.x - transitionCoordinates.x) / base.options.dampenFactor);
         transitionCoordinates.y += ((targetCoordinates.y - transitionCoordinates.y) / base.options.dampenFactor);
@@ -57,11 +52,9 @@
       }, 16);
 
       $(window).resize(function(){
-        // Re-center the image
         setCenterCoordinates();
       });
 
-      // There's a problem with getting image height and width when the image isn't loaded.
       var img = new Image;
       img.src = getBackgroundImageUrl();
       $(img).on('load', function(){
@@ -78,9 +71,7 @@
   };
 
   $.iosParallax.defaultOptions = {
-    // How fast the background moves
     movementFactor: 50,
-    // How much to dampen the movement (higher is slower)
     dampenFactor: 36
   };
 

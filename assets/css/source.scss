@@ -2,15 +2,11 @@
 @import "../scss/vendors/bootstrap";
 @import "../scss/vendors/normalize";
 @import "../scss/vendors/animation";
-@import '../scss/vendors/jquery-ui.min';
-@import "../scss/vendors/mCustomScrollbar";
 @import "../scss/vendors/fancybox";
 @import "../scss/vendors/slick";
 @import "../scss/vendors/slick-theme";
 @import "../scss/vendors/fontawesome";
 @import "../scss/vendors/feather";
-@import "../scss/vendors/ElegantIcons";
-@import "../scss/vendors/socicon";
 @import "../scss/vendors/fontello";
 /* frameworks */
 @import "../scss/frameworks/mixins";
@@ -24,7 +20,6 @@
 @import "../scss/components/mobile-menu";
 @import "../scss/components/slick";
 @import "../scss/components/whead";
-@import "../scss/components/mCustomScrollbar";
 /* pages */
 @import '../scss/pages/default';
 @import "../scss/pages/home";

@@ -1191,7 +1191,7 @@ FileETag None
 # BEGIN Caching
 <ifModule mod_headers.c>
 	<filesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|ttf|otf|woff|woff2|eot|svg)$">
-		Header set Cache-Control "max-age=10368000, public"
+		Header set Cache-Control "max-age=86400000, public"
 	</filesMatch>
 	<filesMatch "\\.(css)$">
 		Header set Cache-Control "max-age=10368000, public"

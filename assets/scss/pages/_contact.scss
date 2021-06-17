@@ -21,7 +21,7 @@
     }
 
     .bg-world{position: absolute; z-index: 2; top: 0; left: 0; width: 100vw; height: 100vh;
-        background-image:url(../img/background/bg-world.png); background-size: cover; background-position: center;
+        background-image:url(../img/background/webp/bg-world.webp); background-size: cover; background-position: center;
         @include animation(bg-world 3s linear infinite alternate);
     }
     @keyframes bg-world {

@@ -45,12 +45,12 @@
     }
 
     .stars, .twinkling, .clouds { position:absolute;top:0;left:0;right:0;bottom:0;width:100vw;height:100vh;}
-    .stars {background:$color-light url(../img/background/stars.png) repeat top center; z-index:0;}
-    .twinkling{ background:transparent url(../img/background/twinkling.png) repeat top center; z-index:1;
+    .stars {background:$color-light url(../img/background/webp/stars.webp) repeat top center; z-index:0;}
+    .twinkling{ background:transparent url(../img/background/webp/twinkling.webp) repeat top center; z-index:1;
         @include animation(move-twink-back 200s linear infinite);
         
     }
-    .clouds{ background:transparent url(../img/background/clouds3.png) repeat top center; z-index:3;
+    .clouds{ background:transparent url(../img/background/webp/clouds3.webp) repeat top center; z-index:3;
         @include animation(move-clouds-back 200s linear infinite);
     }
 }

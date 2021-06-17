@@ -18365,17 +18365,17 @@ nav.menu li.dropdown.show a.link .icon:before {
   height: 100vh;
 }
 .-section-home .stars {
-  background: #ffffff url(../img/background/stars.png) repeat top center;
+  background: #ffffff url(../img/background/webp/stars.webp) repeat top center;
   z-index: 0;
 }
 .-section-home .twinkling {
-  background: transparent url(../img/background/twinkling.png) repeat top center;
+  background: transparent url(../img/background/webp/twinkling.webp) repeat top center;
   z-index: 1;
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
 }
 .-section-home .clouds {
-  background: transparent url(../img/background/clouds3.png) repeat top center;
+  background: transparent url(../img/background/webp/clouds3.webp) repeat top center;
   z-index: 3;
   -webkit-animation: move-clouds-back 200s linear infinite;
   animation: move-clouds-back 200s linear infinite;
@@ -18427,7 +18427,7 @@ nav.menu li.dropdown.show a.link .icon:before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/background/bg-world.png);
+  background-image: url(../img/background/webp/bg-world.webp);
   background-size: cover;
   background-position: center;
   -webkit-animation: bg-world 3s linear infinite alternate;
@@ -19059,13 +19059,13 @@ nav.menu li.dropdown.show a.link .icon:before {
   opacity: 0.9;
 }
 #AboutMe .bg-guide {
-  background: transparent url(../img/background/abm-bg-guide.png) repeat top center;
+  background: transparent url(../img/background/webp/abm-bg-guide.webp) repeat top center;
   z-index: 1;
   -webkit-animation: move-bg-guide 200s linear infinite;
   animation: move-bg-guide 200s linear infinite;
 }
 #AboutMe .bg-pongwisit {
-  background: transparent url(../img/background/abm-bg-pongwisit.png) repeat top center;
+  background: transparent url(../img/background/webp/abm-bg-pongwisit.webp) repeat top center;
   z-index: 1;
   -webkit-animation: move-bg-pongwisit 200s linear infinite;
   animation: move-bg-pongwisit 200s linear infinite;

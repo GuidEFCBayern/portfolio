@@ -184,11 +184,11 @@
     }
 
     .bg-guide, .bg-pongwisit { position:absolute;top:0;left:0;right:0;bottom:0;width:100vw;height:100vh; opacity: 0.9;}
-    .bg-guide{ background:transparent url(../img/background/abm-bg-guide.png) repeat top center; z-index:1;
+    .bg-guide{ background:transparent url(../img/background/webp/abm-bg-guide.webp) repeat top center; z-index:1;
         @include animation(move-bg-guide 200s linear infinite);
         
     }
-    .bg-pongwisit{ background:transparent url(../img/background/abm-bg-pongwisit.png) repeat top center; z-index:1;
+    .bg-pongwisit{ background:transparent url(../img/background/webp/abm-bg-pongwisit.webp) repeat top center; z-index:1;
         @include animation(move-bg-pongwisit 200s linear infinite);
     }
     .bg-line{position: absolute; z-index: 2; top: 0; left: 0; width: 100%; height: 100%; display: flex;

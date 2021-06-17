@@ -1191,16 +1191,16 @@ FileETag None
 # BEGIN Caching
 <ifModule mod_headers.c>
 	<filesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|ttf|otf|woff|woff2|eot|svg)$">
-		Header set Cache-Control "max-age=86400000, public"
+		Header set Cache-Control "max-age=604800, public"
 	</filesMatch>
 	<filesMatch "\\.(css)$">
-		Header set Cache-Control "max-age=10368000, public"
+		Header set Cache-Control "max-age=604800, public"
 	</filesMatch>
 	<filesMatch "\\.(js)$">
-		Header set Cache-Control "max-age=10368000, private"
+		Header set Cache-Control "max-age=604800, private"
 	</filesMatch>
 	<filesMatch "\\.(xml|txt)$">
-		Header set Cache-Control "max-age=10368000, public, must-revalidate"
+		Header set Cache-Control "max-age=604800, public, must-revalidate"
 	</filesMatch>
 	<filesMatch "\\.(html|htm|php)$">
 		Header set Cache-Control "max-age=1, private, must-revalidate"

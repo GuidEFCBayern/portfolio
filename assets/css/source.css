@@ -21654,6 +21654,12 @@ body.sidebar-open {
     transform: none;
   }
 
+  .-section-portfolio .portfolio-slider .tag {
+    top: -10px;
+    position: relative;
+    opacity: 1;
+  }
+
   .slick-dots li {
     margin: 0 2px;
   }

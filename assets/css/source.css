@@ -21472,6 +21472,12 @@ body.sidebar-open {
       bottom: 0;
     }
   }
+  .slick-dots {
+    width: 90vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -21622,6 +21628,10 @@ body.sidebar-open {
     padding-top: 20px;
   }
 
+  .-section-portfolio .nav-tabs {
+    margin-top: 30px;
+  }
+
   .-section-portfolio .nav-tabs .nav-item + .nav-item {
     margin-left: 2px;
   }
@@ -21658,6 +21668,11 @@ body.sidebar-open {
     top: -10px;
     position: relative;
     opacity: 1;
+  }
+
+  .slick-dots {
+    position: relative;
+    bottom: 0;
   }
 
   .slick-dots li {
